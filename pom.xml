@@ -280,7 +280,11 @@
 									<goal>exec</goal>
 								</goals>
 								<configuration>
-									<executable>${basedir}/docker/scripts/convert-sql-scripts.sh</executable>
+									<executable>cmd</executable>
+									<arguments>
+										<argument>/C</argument>
+										<argument>${project.basedir}/docker/scripts/convert-sql-scripts.sh</argument>
+									</arguments>
 								</configuration>
 							</execution>
 						</executions>
